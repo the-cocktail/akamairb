@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby 
 
-puts "Akamai Command"
+require 'akamairb'
 
-# require 'akamairb/command'
-
-# Akamai::Command.start
+Akamai::Command.start
