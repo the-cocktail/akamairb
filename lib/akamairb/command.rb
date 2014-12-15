@@ -35,7 +35,7 @@ module Akamai
       end
 
       unless config
-        STDERR.puts "Configuration is empty. Please check your '~/.akamai.yml'"
+        say "Configuration is empty. Please check your '~/.akamai.yml'", :red
         exit -1
       end
 
