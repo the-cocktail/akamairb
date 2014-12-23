@@ -1,24 +1,33 @@
 # Akamairb
 
-TODO: Write a gem description
+Simple command-line tool for managing Akamai cache purges.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'akamairb'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install akamairb
 
 ## Usage
 
-TODO: Write usage instructions here
+### Setup:
+
+ Akamairb needs a special file `.akamai.yml` in your home directory.
+
+ The format of the `.akamai.yml` file is pretty straighforward
+
+     user: YOUR_USER
+     pass: YOUR_PASSWORD
+
+### Commands:
+  
+ * akamai help [COMMAND]  # Describe available commands or one specific command
+ * akamai purge URLS      # purge urls from Akamai
+ * akamai show ID         # show progress of a purge
+
+### Params:
+
+ * --debug                # Show raw response from akamai
 
 ## Contributing
 
@@ -27,3 +36,8 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+## THANKS
+
+This tool is shamelessly inspired in Juan Lupion's [tacoma](https://github.com/pantulis/tacoma)

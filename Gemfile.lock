@@ -1,17 +1,10 @@
-PATH
-  remote: .
-  specs:
-    akamairb (0.0.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.4.2)
+    thor (0.19.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  akamairb!
-  bundler (~> 1.5)
-  rake
+  thor
